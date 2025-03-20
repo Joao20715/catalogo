@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Filmes</title>
+    <!-- Incluindo Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+   
+        * {
+            
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        
+
+        body {
+            
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #1a1a1a;
+        }
+
+        .card-filme {
+            display: inline-block;
+            background: #111010;
+            width: 280px;
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 15px;
+            transition: transform 0.3s;
+            color: white;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+        }
+
+        .card-filme:hover {
+            transform: translateY(-5px);
+        }
+
+        .poster {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-bottom: 3px solid #48ff00;
+        }
+
+        .conteudo {
+            padding: 20px;
+            position: relative;
+        }
+
+        .titulo {
+            font-size: 1.3em;
+            margin-bottom: 10px;
+            color: #ff9800;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+            font-size: 0.9em;
+            color: #ccc;
+        }
+
+        .genero {
+            background: #ff9800;
+            color: #2d2d2d;
+            padding: 3px 8px;
+            border-radius: 15px;
+            font-weight: bold;
+            font-size: 0.8em;
+        }
+
+        .avaliacao {
+            color: #ffd700;
+            margin-bottom: 10px;
+        }
+
+        .descricao {
+            font-size: 0.9em;
+            line-height: 1.4;
+            color: #aaa;
+            margin-bottom: 15px;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .botao {
+            display: block;
+            width: 100%;
+            background: #ff9800;
+            color: #2d2d2d;
+            text-align: center;
+            padding: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .botao:hover {
+            background: #e68900;
+        }
+
+        .ano-duracao {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 10px;
+        }
+
+        .fa-star {
+            margin-right: 3px;
+        }
+    </style>
+</head>
+<body>
+
+
+   <!--FILME 1-->
+    <div class="card-filme">
+        <img src="fotos4/pod.jpg" alt="Poster do Filme" class="poster">
+        <div class="conteudo">
+            <div>
+            <h2 class="titulo">O Poderoso Chefão</h2>
+        </div>
+            <div class="ano-duracao">
+                <span>1972</span>
+                <span>175 min</span>
+            </div>
+            <div class="info">
+                <span class="genero">Drama/Crime</span>
+                <div class="avaliacao">
+                    <i class="fa-solid fa-star"></i>
+                    9.2/10
+                </div>
+            </div>
+            <p class="descricao">
+                A saga da família Corleone, uma dinastia mafiosa de Nova York. 
+                Don Vito Corleone, o chefe da família, tenta passar o controle 
+                do império clandestino para seu filho mais novo.
+            </p>
+            <a href="https://www.imdb.com/pt/title/tt0068646/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_poderoso" class="botao" target="_blank" target="_blank">IMDB</a>
+        </div>
+    </div>
+
+
+
+   <!--FILME 2-->
+
+    <div class="card-filme">
+        <img src="fotos4/um.jpg" alt="Poster do Filme" class="poster">
+        <div class="conteudo">
+            <h2 class="titulo"> Um sonho de libertade </h2>
+            <div class="ano-duracao">
+                <span>1994</span>
+                <span>142 min</span>
+            </div>
+            <div class="info">
+                <span class="genero">Drama</span>
+                <div class="avaliacao">
+                    <i class="fa-solid fa-star"></i>
+                    9.3/10
+                </div>
+            </div>
+            <p class="descricao">
+               Dois homens presos se reúnem ao longo de vários anos, encontrando consolo e eventual redenção através de atos de decência comum.
+            </p>
+            <a href="https://www.imdb.com/pt/title/tt0111161/?ref_=chttp_t_1" class="botao" target="_blank">IMDB</a>
+        </div>
+    </div>
+
+   <!--FILME 3-->
+
+   <div class="card-filme">
+    <img src="fotos4/li.jpg" alt="Poster do Filme" class="poster">
+    <div class="conteudo">
+        <h2 class="titulo">A Lista de Schindler</h2>
+        <div class="ano-duracao">
+            <span>1993</span>
+            <span>195 min</span>
+        </div>
+        <div class="info">
+            <span class="genero">Drama</span>
+            <div class="avaliacao">
+                <i class="fa-solid fa-star"></i>
+                9.0/10
+            </div>
+        </div>
+        <p class="descricao">
+         Na Polônia ocupada pelos alemães durante a Segunda Guerra Mundial, o industrial Oskar Schindler começa a se preocupar com seus trabalhadores judeus depois de testemunhar sua perseguição pelos nazistas.
+        </p>
+        <a href="https://www.imdb.com/pt/title/tt0108052/?ref_=chttp_t_7" class="botao" target="_blank">IMDB</a>
+    </div>
+</div>
+
+   <!--FILME 4-->
+   <div class="card-filme">
+    <img src="fotos4/tempo.jpg" alt="Poster do Filme" class="poster">
+    <div class="conteudo">
+
+        <div>
+        <h2 class="titulo">Pulp Fiction: Tempo de Violência</h2>
+        </div>
+        <div class="ano-duracao">
+            <span>1994</span>
+            <span>154 min</span>
+        </div>
+        <div class="info">
+            <span class="genero">Drama/Crime</span>
+            <div class="avaliacao">
+                <i class="fa-solid fa-star"></i>
+                8.9/10
+            </div>
+        </div>
+        <p class="descricao">
+            As vidas de dois assassinos da máfia, um boxeador, um gângster e sua esposa, e um par de bandidos se entrelaçam em quatro histórias de violência e redenção.
+        </p>
+        <a href="https://www.imdb.com/pt/title/tt0110912/?ref_=chttp_t_8" class="botao" target="_blank">IMDB</a>
+    </div>
+</div>
+
+
+
+<!--FILME 5-->
+
+<div class="card-filme">
+    <img src="fotos4/ForrestGumpPoster.jpg" alt="Poster do Filme" class="poster">
+    <div class="conteudo">
+        <h2 class="titulo">Forrest Gump: O Contador de Histórias</h2>
+        <div class="ano-duracao">
+            <span>1994</span>
+            <span>142 min</span>
+        </div>
+        <div class="info">
+            <span class="genero">Drama/romance</span>
+            <div class="avaliacao">
+                <i class="fa-solid fa-star"></i>
+                8.8/10
+            </div>
+        </div>
+        <p class="descricao">
+            Os governos dos presidentes Kennedy e Johnson, os eventos do Vietnã e Watergate e outras histórias são mostradas através da perspectiva de um homem do Alabama com baixo quociente intelectual.
+        </p>
+        <a href="https://www.imdb.com/pt/title/tt0109830/?ref_=chttp_t_11" class="botao" target="_blank">IMDB</a>
+    </div>
+</div>
+
+<!--FILME 6-->
+
+<div class="card-filme">
+<img src="fotos4/club.jpg" alt="Poster do Filme" class="poster">
+<div class="conteudo">
+    <h2 class="titulo">Clube da Luta</h2>
+    <div class="ano-duracao">
+        <span>1999</span>
+        <span>139 min</span>
+    </div>
+    <div class="info">
+        <span class="genero">Drama</span>
+        <div class="avaliacao">
+            <i class="fa-solid fa-star"></i>
+            8.8/10
+        </div>
+    </div>
+    <p class="descricao">
+        Um trabalhador de escritório e um fabricante de sabonetes formam um clube de luta clandestino que evolui para algo muito maior.
+    </p>
+    <a href="https://www.imdb.com/pt/title/tt0137523/?ref_=chttp_t_13" class="botao" target="_blank">IMDB</a>
+</div>
+</div>
+   <!--FILME 7-->
+   <div class="card-filme">
+    <img src="fotos4/matrix.jpg" alt="Poster do Filme" class="poster">
+    <div class="conteudo">
+        <h2 class="titulo">Matrix</h2>
+        <div class="ano-duracao">
+            <span>1999</span>
+            <span>136 min</span>
+        </div>
+        <div class="info">
+            <span class="genero">Açao/ficção</span>
+            <div class="avaliacao">
+                <i class="fa-solid fa-star"></i>
+                8.7/10
+            </div>
+        </div>
+        <p class="descricao">
+            Um hacker aprende com os misteriosos rebeldes sobre a verdadeira natureza de sua realidade e seu papel na guerra contra seus controladores.
+        </p>
+        <a href="https://www.imdb.com/pt/title/tt0133093/?ref_=chttp_t_16" class="botao" target="_blank">IMDB</a>
+    </div>
+</div>
+
+
+
+<!--FILME 8-->
+
+<div class="card-filme">
+    <img src="fotos4/companheiro.webp" alt="Poster do Filme" class="poster">
+    <div class="conteudo">
+        <h2 class="titulo">Os Bons Companheiros </h2>
+        <div class="ano-duracao">
+            <span>1990</span>
+            <span>145 min</span>
+        </div>
+        <div class="info">
+            <span class="genero">Drama/crime</span>
+            <div class="avaliacao">
+                <i class="fa-solid fa-star"></i>
+                8.7/10
+            </div>
+        </div>
+        <p class="descricao">
+            A historia do Henry Hill e sua vida na máfia, sua relação com sua esposa Karen Hill e seus colegas da máfia Jimmy Conway e Tommy DeVito no sindicato italo-americano do crime.
+        </p>
+        <a href="https://www.imdb.com/pt/title/tt0099685/?ref_=chttp_t_17" class="botao" target="_blank">IMDB</a>
+    </div>
+</div>
+
+<!--FILME 9-->
+
+<div class="card-filme">
+<img src="fotos4/sev.webp" alt="Poster do Filme" class="poster">
+<div class="conteudo">
+    <h2 class="titulo">Seven - Os Sete Crimes Capitais</h2>
+    <div class="ano-duracao">
+        <span>1995</span>
+        <span>127 min</span>
+    </div>
+    <div class="info">
+        <span class="genero">Drama/crime</span>
+        <div class="avaliacao">
+            <i class="fa-solid fa-star"></i>
+            8.6/10
+        </div>
+    </div>
+    <p class="descricao">
+        Dois detetives, um novato e um veterano, perseguem um assassino em série que usa os sete pecados capitais como motivos.
+    </p>
+    <a href="https://www.imdb.com/pt/title/tt0114369/?ref_=chttp_t_20" class="botao" target="_blank">IMDB</a>
+</div>
+</div>
+   <!--FILME 10-->
+   <div class="card-filme">
+    <img src="fotos4/o-silencio.jpg" alt="Poster do Filme" class="poster">
+    <div class="conteudo">
+        <h2 class="titulo">O Silêncio dos Inocentes</h2>
+        <div class="ano-duracao">
+            <span>1991</span>
+            <span>118 min</span>
+        </div>
+        <div class="info">
+            <span class="genero">Drama/Crime</span>
+            <div class="avaliacao">
+                <i class="fa-solid fa-star"></i>
+                8.6/10
+            </div>
+        </div>
+        <p class="descricao">
+            Uma jovem deve receber a ajuda de um assassino canibal manipulador e preso para ajudar a capturar outro assassino em série, um louco que ataca suas vítimas
+        </p>
+        <a href="https://www.imdb.com/pt/title/tt0102926/?ref_=chttp_t_23" class="botao" target="_blank">IMDB</a>
+    </div>
+</div>
+
+
+
+<!--FILME 11-->
+
+<div class="card-filme">
+    <img src="fotos4/soldado.jpg" alt="Poster do Filme" class="poster">
+    <div class="conteudo">
+        <h2 class="titulo"> O Resgate do Soldado Ryan </h2>
+        <div class="ano-duracao">
+            <span>1998</span>
+            <span>169 min</span>
+        </div>
+        <div class="info">
+            <span class="genero">Drama</span>
+            <div class="avaliacao">
+                <i class="fa-solid fa-star"></i>
+                8.6/10
+            </div>
+        </div>
+        <p class="descricao">
+            Depois de chegar a Normandía, um grupo de soldados precisa encontrar o único irmão vivo de três que morreram na guerra.</p>
+        <a href="https://www.imdb.com/pt/title/tt0120815/?ref_=chttp_t_24" class="botao" target="_blank">IMDB</a>
+    </div>
+</div>
+
+   <!--FILME 1-->
+   <div class="card-filme">
+    <img src="fotos4/unna.png" alt="Poster do Filme" class="poster">
+    <div class="conteudo">
+        <h2 class="titulo"> À Espera de um Milagre</h2>
+        <div class="ano-duracao">
+            <span>1999</span>
+            <span>189 min</span>
+        </div>
+        <div class="info">
+            <span class="genero">Drama/Crime</span>
+            <div class="avaliacao">
+                <i class="fa-solid fa-star"></i>
+                8.6/10
+            </div>
+        </div>
+        <p class="descricao">
+            As vidas dos guardas de corredor da morte são afetadas por um dos detidos: um homem afro-americano acusado pelo assassinato e estupro de uma criança, mas com um presente misterioso.
+        </p>
+        <a href="https://www.imdb.com/pt/title/tt0068646/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_poderoso" class="botao" target="_blank">IMDB</a>
+    </div>
+</div>
+
+
+
+<!--FILME 2-->
+
+<div class="card-filme">
+    <img src="fotos4/amor.jpg" alt="Poster do Filme" class="poster">
+    <div class="conteudo">
+        <h2 class="titulo"> A Vida é Bela </h2>
+        <div class="ano-duracao">
+            <span>1997</span>
+            <span>116 min</span>
+        </div>
+        <div class="info">
+            <span class="genero">Comedia/romance </span>
+            <div class="avaliacao">
+                <i class="fa-solid fa-star"></i>
+                8.6/10
+            </div>
+        </div>
+        <p class="descricao">
+            Quando um bibliotecário judeu e seu filho se tornarem vítimas do Holocausto, ele usará uma mistura perfeita de vontade, humor e imaginação para proteger seu filho dos perigos do campo de concentração
+        </p>
+        <a href="https://www.imdb.com/pt/title/tt0118799/?ref_=chttp_t_27" class="botao" target="_blank">IMDB</a>
+    </div>
+</div>
+
+<!--FILME 3-->
+
+<div class="card-filme">
+<img src="fotos4/GladiadorPoster.jpg" alt="Poster do Filme" class="poster">
+<div class="conteudo">
+    <h2 class="titulo">Gladiador</h2>
+    <div class="ano-duracao">
+        <span>2000</span>
+        <span>155 min</span>
+    </div>
+    <div class="info">
+        <span class="genero">Drama/ação</span>
+        <div class="avaliacao">
+            <i class="fa-solid fa-star"></i>
+            8.5/10
+        </div>
+    </div>
+    <p class="descricao">
+        Um general romano planeja a melhor vingança contra o imperador corrupto que matou sua familia e o fez escravo.
+     </p>
+    <a href="https://www.imdb.com/pt/title/tt0172495/?ref_=chttp_t_33" class="botao" target="_blank">IMDB</a>
+</div>
+</div>
+
+<!--FILME 4-->
+<div class="card-filme">
+<img src="fotos4/20343389.webp" alt="Poster do Filme" class="poster">
+<div class="conteudo">
+    <h2 class="titulo">A Outra História Americana</h2>
+    <div class="ano-duracao">
+        <span>1998</span>
+        <span>119 min</span>
+    </div>
+    <div class="info">
+        <span class="genero">Drama/Crime</span>
+        <div class="avaliacao">
+            <i class="fa-solid fa-star"></i>
+            8.5/10
+        </div>
+    </div>
+    <p class="descricao">
+        Um neonazista tenta evitar que seu irmão mais novo tome o mesmo caminho errado que ele.
+    </p>
+    <a href="https://www.imdb.com/pt/title/tt0120586/?ref_=tt_mv_close" class="botao" target="_blank">IMDB</a>
+</div>
+</div>
+
+
+
+<!--FILME 5-->
+
+<div class="card-filme">
+<img src="fotos4/profissional.png" alt="Poster do Filme" class="poster">
+<div class="conteudo">
+    <h2 class="titulo">O Profissional</h2>
+    <div class="ano-duracao">
+        <span>1994</span>
+        <span>110 min</span>
+    </div>
+    <div class="info">
+        <span class="genero">Drama/romance</span>
+        <div class="avaliacao">
+            <i class="fa-solid fa-star"></i>
+            8.5/10
+        </div>
+    </div>
+    <p class="descricao">
+        Mathilda, uma menina de 12 anos é levada por Léon, um assassino profissional, depois que sua família é assassinada. Léon e Mathilda formam uma relação incomum, desde que ela se torna sua protegida.
+    </p>
+    <a href="https://www.imdb.com/pt/title/tt0110413/?ref_=chttp_t_43" class="botao" target="_blank">IMDB</a>
+</div>
+</div>
+
+<!--FILME 6-->
+
+<div class="card-filme">
+<img src="fotos4/jo.webp" alt="Poster do Filme" class="poster">
+<div class="conteudo">
+<h2 class="titulo">Os Suspeitos</h2>
+<div class="ano-duracao">
+    <span>1995</span>
+    <span>106 min</span>
+</div>
+<div class="info">
+    <span class="genero">Drama/crime</span>
+    <div class="avaliacao">
+        <i class="fa-solid fa-star"></i>
+        8.5/10
+    </div>
+</div>
+<p class="descricao">
+    O único sobrevivente conta os torcidos eventos duma luta com pistolas num bote, quanfo cinco criminais eram levados pela polícia.
+</p>
+<a href="https://www.imdb.com/pt/title/tt0114814/?ref_=chttp_t_46" class="botao" target="_blank">IMDB</a>
+</div>
+</div>
+<!--FILME 7-->
+<div class="card-filme">
+<img src="fotos4/Amn.webp" alt="Poster do Filme" class="poster">
+<div class="conteudo">
+    <h2 class="titulo">Amnésia</h2>
+    <div class="ano-duracao">
+        <span>2000</span>
+        <span>113 min</span>
+    </div>
+    <div class="info">
+        <span class="genero">Açao/ficção</span>
+        <div class="avaliacao">
+            <i class="fa-solid fa-star"></i>
+            8.4/10
+        </div>
+    </div>
+    <p class="descricao">
+        Um homem com perda da memória de curto prazo tenta investigar o homicídio da sua esposa.
+    </p>
+    <a href="https://www.imdb.com/pt/title/tt0209144/?ref_=chttp_t_57" class="botao" target="_blank">IMDB</a>
+</div>
+</div>
+
+
+
+<!--FILME 8-->
+
+<div class="card-filme">
+<img src="fotos4/Genio.webp" alt="Poster do Filme" class="poster">
+<div class="conteudo">
+    <h2 class="titulo">Gênio Indomável</h2>
+    <div class="ano-duracao">
+        <span>1997</span>
+        <span>145 min</span>
+    </div>
+    <div class="info">
+        <span class="genero">Drama/crime</span>
+        <div class="avaliacao">
+            <i class="fa-solid fa-star"></i>
+            8.3/10
+        </div>
+    </div>
+    <p class="descricao">
+        Will Hunting, um zelador de uma universidade, tem habilidades para a matemática, mas precisa da ajuda de um psicólogo para encontrar seu propósito.
+    </p>
+    <a href="https://www.imdb.com/pt/title/tt0099685/?ref_=chttp_t_17" class="botao" target="_blank">IMDB</a>
+</div>
+</div>
+
+<!--FILME 9-->
+
+<div class="card-filme">
+<img src="fotos4/bele.jpg" alt="Poster do Filme" class="poster">
+<div class="conteudo">
+<h2 class="titulo">Beleza Americana</h2>
+<div class="ano-duracao">
+    <span>1999</span>
+    <span>122 min</span>
+</div>
+<div class="info">
+    <span class="genero">Drama/crime</span>
+    <div class="avaliacao">
+        <i class="fa-solid fa-star"></i>
+        8.3/10
+    </div>
+</div>
+<p class="descricao">
+    Um pai sexualmente frustrado tem uma crise existencial depois de conhecer a melhor amiga da sua filha.
+</p>
+<a href="https://www.imdb.com/pt/title/tt0169547/?ref_=chttp_t_79" class="botao" target="_blank">IMDB</a>
+</div>
+</div>
+
+
+</body>
+</html>
